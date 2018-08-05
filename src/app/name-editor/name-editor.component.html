@@ -1,0 +1,31 @@
+
+<form [formGroup]="myForm">
+
+  value: {{ myForm.value | json }}
+
+  <hr>
+  
+  <div class="example-container">
+    <mat-form-field item-width="10px">
+      <input matInput placeholder="First Name" formControlName="firstName">
+    </mat-form-field>
+
+    <mat-form-field>
+        <input matInput placeholder="Last Name" formControlName="lastName">
+    </mat-form-field>
+
+    <mat-form-field>
+        <textarea matInput placeholder="Comments" formControlName="comments"></textarea>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-select placeholder="Select" formControlName="fruits">
+        <mat-option value="mango">Mango</mat-option>
+        <mat-option value="apple">Apple</mat-option>
+        <mat-option value="orange">Orange</mat-option>
+        <mat-option value="pineapple">Pineapple</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+  </div>
+</form>
